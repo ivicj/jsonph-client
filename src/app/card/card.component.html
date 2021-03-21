@@ -1,0 +1,10 @@
+<div class="card-wrapper">
+  <div class="face" [hidden]="showUserId">
+    <h3>{{ post?.id }}</h3>
+    <p>Post ID</p>
+  </div>
+  <div class="back" [hidden]="!showUserId">
+    <h3>{{ post?.userId }}</h3>
+    <p>User ID</p>
+  </div>
+</div>
