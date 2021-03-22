@@ -1,6 +1,33 @@
 # JsonphClient
+> Proof of concept Angular 11 application 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+## Table of contents
+* [Description](#description)
+* [Screenshot](#screenshot)
+* [Requirements](#requirements)
+* [Development server](#development-server)
+* [Code scaffolding](#code-scaffolding)
+* [Build](#build)
+* [Running unit tests](#running-unit-tests)
+* [Running end-to-end tests](#running-end-to-end-tests)
+* [Further help](#further-help)
+
+## Description
+
+This is Angular application that uses jsonplaceholder API to fetch 100 posts and render them all where each post is in a separate component and displayed as squares, 10 rows x 10 columns. By default, the post id is shown in a sqare. When clicking on the square: the post id is replaced with the user id. When clicking again the post id is shown again and so on.
+
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/16215654/111951630-39184300-8ae4-11eb-8080-b2395469843d.png)
+
+## Requirements
+
+This project was generated with:
+- [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+- [Node.js](https://nodejs.org/download/release/latest-v14.x/) version 14.16.0
+  - To confirm version run `node -v` in a terminal window.
+- [npm package manager](https://www.npmjs.com/package/npm/v/7.6.3) version 7.6.3
+  - To confirm version run `npm -v` in a terminal window.
 
 ## Development server
 
