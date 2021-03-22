@@ -5,6 +5,7 @@
 * [Description](#description)
 * [Screenshot](#screenshot)
 * [Requirements](#requirements)
+* [Project structure](#project-structure)
 * [Development server](#development-server)
 * [Code scaffolding](#code-scaffolding)
 * [Build](#build)
@@ -14,11 +15,13 @@
 
 ## Description
 
-This is Angular application that uses jsonplaceholder API to fetch 100 posts and render them all where each post is in a separate component and displayed as squares, 10 rows x 10 columns. By default, the post id is shown in a sqare. When clicking on the square: the post id is replaced with the user id. When clicking again the post id is shown again and so on.
+This is Angular application that uses [jsonplaceholder API](https://jsonplaceholder.typicode.com/posts) to fetch 100 posts and render them all where each post is in a separate component and displayed as squares, 10 rows x 10 columns. By default, the post id is shown in a sqare. When clicking on the square: the post id is replaced with the user id. When clicking again the post id is shown again and so on.
+
+I've already implemented the RxJS version of this project a few months ago. Please, feel free to check out my [ngRx store implementation](https://github.com/ivicj/practice).
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/16215654/111951630-39184300-8ae4-11eb-8080-b2395469843d.png)
+![image](https://user-images.githubusercontent.com/16215654/111970323-73d9a580-8afb-11eb-9840-f6782b6789ab.png)
 
 ## Requirements
 
@@ -28,6 +31,15 @@ This project was generated with:
   - To confirm version run `node -v` in a terminal window.
 - [npm package manager](https://www.npmjs.com/package/npm/v/7.6.3) version 7.6.3
   - To confirm version run `npm -v` in a terminal window.
+
+## Project structure
+
+This project consists of frontend applicaton.
+Notable folders:
+- components\card - Card component, shows post information. HostBinding is used for animation to add css class animation in order to trigger [flip animation](https://animista.net/play/basic/flip/flip-vertical-fwd) on click event.
+- services\post - Gets all posts from jsonplaceholder api.
+- model - Holds post model.
+- app.component - Calls service to fetch data and renders them.
 
 ## Development server
 
