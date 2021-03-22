@@ -1,11 +1,5 @@
-import {
-  Component,
-  Input,
-  OnInit,
-  HostListener,
-  HostBinding,
-} from '@angular/core';
-import { Post } from '../post';
+import { Component, Input, OnInit, HostListener, HostBinding } from '@angular/core';
+import { Post } from '../../model/post.model';
 
 @Component({
   selector: 'app-card',
@@ -13,11 +7,10 @@ import { Post } from '../post';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent implements OnInit {
+
   @Input() post?: Post;
-
-  showUserId = false;
-
   @HostBinding('class.flipAnimation') flipAnimation: boolean = false;
+  showUserId = false;
 
   constructor() {}
 

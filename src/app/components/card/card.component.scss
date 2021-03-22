@@ -11,9 +11,8 @@
 }
 
 :host(.flipAnimation) {
-  -webkit-animation: flip-vertical-fwd 0.4s
-    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-  animation: flip-vertical-fwd 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: flip-vertical-fwd 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: flip-vertical-fwd 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   div {
     filter: blur(5px);
   }
@@ -59,20 +58,20 @@ p {
 @-webkit-keyframes flip-vertical-fwd {
   0% {
     -webkit-transform: translateZ(0) rotateY(0);
-    transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
   }
   100% {
     -webkit-transform: translateZ(160px) rotateY(180deg);
-    transform: translateZ(160px) rotateY(180deg);
+            transform: translateZ(160px) rotateY(180deg);
   }
 }
 @keyframes flip-vertical-fwd {
   0% {
     -webkit-transform: translateZ(0) rotateY(0);
-    transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
   }
   100% {
     -webkit-transform: translateZ(160px) rotateY(180deg);
-    transform: translateZ(160px) rotateY(180deg);
+            transform: translateZ(160px) rotateY(180deg);
   }
 }
