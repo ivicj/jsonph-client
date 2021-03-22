@@ -17,7 +17,7 @@
 
 This is Angular application that uses [jsonplaceholder API](https://jsonplaceholder.typicode.com/posts) to fetch 100 posts and render them all where each post is in a separate component and displayed as squares, 10 rows x 10 columns. By default, the post id is shown in a sqare. When clicking on the square: the post id is replaced with the user id. When clicking again the post id is shown again and so on.
 
-I've already implemented the RxJS version of this project a few months ago. Please, feel free to check out my [ngRx store implementation](https://github.com/ivicj/practice)
+I've already implemented the RxJS version of this project a few months ago. Please, feel free to check out my [ngRx store implementation](https://github.com/ivicj/practice).
 
 ## Screenshot
 
